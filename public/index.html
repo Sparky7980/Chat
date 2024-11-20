@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Chat App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="chat-container">
+    <h1>Simple Chat</h1>
+    <div id="messages"></div>
+
+    <!-- Login Form -->
+    <div id="login-form" style="display: none;">
+      <h2>Login</h2>
+      <input type="email" id="login-email" placeholder="Email" />
+      <input type="password" id="login-password" placeholder="Password" />
+      <button onclick="loginUser()">Login</button>
+    </div>
+
+    <!-- Signup Form -->
+    <div id="signup-form">
+      <h2>Sign Up</h2>
+      <input type="email" id="signup-email" placeholder="Email" />
+      <input type="password" id="signup-password" placeholder="Password" />
+      <button onclick="signupUser()">Sign Up</button>
+    </div>
+
+    <!-- Chat Section -->
+    <div id="chat-section" style="display: none;">
+      <input type="text" id="message-input" placeholder="Type a message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
